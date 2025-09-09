@@ -1,0 +1,49 @@
+/* styles.css placeholder */
+
+
+/* ----------------------------
+   Light theme overrides
+   Triggered when <html data-theme="light">
+   The JS toggle sets this attribute automatically.
+   ---------------------------- */
+[data-theme="light"] body {
+  background: linear-gradient(180deg,#ffffff 0%, #f1f5f9 100%);
+  color: #0b1220;
+}
+
+[data-theme="light"] header {
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(11,18,32,0.06);
+}
+
+[data-theme="light"] .card {
+  background: linear-gradient(180deg, rgba(11,18,32,0.02), rgba(11,18,32,0.01));
+  box-shadow: 0 6px 18px rgba(11,18,32,0.06);
+  color: #0b1220;
+}
+
+[data-theme="light"] .bio-item {
+  background: rgba(11,18,32,0.02);
+}
+
+[data-theme="light"] .label { color: #55606a; }
+[data-theme="light"] .value { color: #0b1220; }
+
+[data-theme="light"] .skills .skill {
+  background: rgba(11,18,32,0.03);
+  color: #0b1220;
+}
+
+[data-theme="light"] a.btn {
+  /* keep accent gradient but slightly darker for contrast */
+  background: linear-gradient(90deg,#5b21b6,#0891b2);
+  color: #fff;
+}
+
+/* avatar gradient swap for light theme */
+[data-theme="light"] .avatar {
+  background: linear-gradient(135deg,#06b6d4,#7c3aed);
+}
+
+/* small helper to ensure footer text is readable */
+[data-theme="light"] footer { color: #6b7280; }

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biodata Azizah Az-Zahra</title>
+  <style>
+    :root {
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; 
+      --accent:#7c3aed; --glass:rgba(255,255,255,0.04);
+    }
+    * { box-sizing:border-box; margin:0; padding:0 }
+    body {
+      font-family:Inter, system-ui, Arial, sans-serif;
+      background:linear-gradient(180deg,#071024 0%, #0b1530 100%);
+      color:#e6eef8;
+      line-height:1.6;
+    }
+    .container { max-width:980px; margin:20px auto; padding:16px }
+    header {
+      display:flex; gap:20px; align-items:center;
+      flex-wrap:wrap;
+      background:var(--card);
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.6);
+    }
+    .avatar {
+      flex-shrink:0;
+      width:160px; height:200px;
+      border-radius:18px;
+      padding:6px;
+      background:linear-gradient(135deg,var(--accent),#06b6d4);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .avatar img {
+      width:100%; height:100%;
+      object-fit:cover;
+      border-radius:12px;
+      display:block;
+    }
+    header .info { flex:1; min-width:220px }
+    header h1 { font-size:2.2rem; margin:0 0 6px }
+    header h2 { font-size:1.2rem; font-weight:500; color:var(--muted) }
+    header p  { font-size:1rem; color:var(--muted); margin-top:6px }
+
+    .grid {
+      display:grid;
+      grid-template-columns:2fr 1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+    .card {
+      background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:18px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.6);
+    }
+    .bio-list { display:grid; gap:8px }
+    .bio-item {
+      display:flex; justify-content:space-between;
+      padding:10px;
+      border-radius:10px;
+      background:var(--glass);
+      font-size:14px;
+    }
+    .label { color:var(--muted) }
+    .value { font-weight:600 }
+    .skills { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px }
+    .skill {
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,0.05);
+      font-size:13px;
+    }
+    .links { display:flex; flex-direction:column; gap:8px }
+    a.btn {
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:10px;
+      text-decoration:none;
+      background:linear-gradient(90deg,var(--accent),#06b6d4);
+      color:#fff;
+      font-weight:600;
+      text-align:center;
+    }
+    footer { margin-top:30px; text-align:center; color:var(--muted); font-size:13px }
+
+    /* RESPONSIVE */
+    @media (max-width:820px) {
+      .grid { grid-template-columns:1fr; }
+      header { flex-direction:column; text-align:center }
+      .avatar { width:140px; height:180px }
+      header .info { margin-top:10px }
+      header h1 { font-size:1.8rem }
+      header h2 { font-size:1rem }
+      header p  { font-size:0.95rem }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img src="azizah.jpg" alt="Foto Azizah Az-Zahra" />
+      </div>
+      <div class="info">
+        <h1>Azizah Az-Zahra</h1>
+        <h2>Mahasiswa Ilmu Komputer</h2>
+        <p>IPB University 
+        <p>Selamat datang di halaman biodata saya</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h3>Biodata Singkat</h3>
+          <div class="bio-list">
+            <div class="bio-item"><span class="label">Nama</span><span class="value">Azizah Az-Zahra</span></div>
+            <div class="bio-item"><span class="label">NIM</span><span class="value">M0403241048</span></div>
+            <div class="bio-item"><span class="label">Program Studi</span><span class="value">Ilmu Komputer</span></div>
+            <div class="bio-item"><span class="label">Fakultas</span><span class="value">SSMI</span></div>
+            <div class="bio-item"><span class="label">Angkatan</span><span class="value">2024</span></div>
+            <div class="bio-item"><span class="label">Proxy</span><span class="value">Huntington</span></div>
+            <div class="bio-item"><span class="label">Lokasi</span><span class="value">Bogor, Indonesia</span></div>
+          </div>
+
+          <h3 style="margin-top:16px">Tentang Saya</h3>
+          <p style="color:var(--muted)">
+            Nama saya Azizah Az-Zahra, lahir di Jakarta pada tanggal 12 Desember 2005 dan saat ini berdomisili di Jakarta Timur.
+            Saat ini saya sedang menempuh pendidikan di IPB University dengan program studi Ilmu Komputer. 
+            Dalam keseharian, saya dikenal sebagai pribadi yang disiplin, mudah bergaul, dan bertanggung jawab. 
+            Saya memiliki minat yang besar pada bidang keamanan siber (cyber security) serta berkomitmen untuk terus mengembangkan pengetahuan dan keterampilan dalam bidang teknologi informasi. 
+            Selain itu, saya juga gemar berolahraga, khususnya badminton. 
+            Dengan latar belakang pendidikan dan minat tersebut, saya bercita-cita menjadi seorang Cyber Security Specialist.
+          </p>
+
+          <h3 style="margin-top:16px">Keahlian</h3>
+          <div class="skills">
+            <span class="skill">Microsoft Word</span>
+            <span class="skill">Microsoft Excel</span>
+            <span class="skill">HTML</span>
+            <span class="skill">Microsoft Access</span>
+          </div>
+
+          <h3 style="margin-top:16px">Riwayat Pendidikan</h3>
+          <ul style="color:var(--muted)">
+            <li>SDN Lubang Buaya 04 Pagi (2011-2017)</li>
+            <li>SMPN 272 Jakarta (2017-2020)</li>
+            <li>SMAN 113 Jakarta (2021-2024)</li>
+            <li>IPB University (2024-sekarang)</li>
+          </ul>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>Quick Links</h3>
+          <div class="links">
+            <a class="btn" href="https://www.ipb.ac.id" target="_blank">Website IPB</a>
+            <a class="btn" href="https://instagram.com/azizahazr" target="_blank">Instagram</a>
+            <a class="btn" href="https://wa.me/6285887370756" target="_blank">WhatsApp</a>
+          </div>
+
+          <h3 style="margin-top:16px">Contact</h3>
+          <div class="links">
+            <a class="btn" href="mailto:azizahazzahra121205@gmail.com">Email</a>
+            <a class="btn" href="https://github.com/azizahazr" target="_blank">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/azizah-az-zahra-641354320" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p><strong>Azizah Az-Zahra (M0403241048)</strong></p>
+      <p>© IPB University • Mahasiswa Ilmu Komputer</p>
+    </footer>
+  </div>
+</body>
+</html>
